@@ -5,6 +5,7 @@ nav {
     height: 71px;
     align-items: center;
     background-color: #0779E4;
+
 }
 
 .nav-items {
@@ -53,4 +54,23 @@ nav {
 .btn-white {
     color: #0779E4;
     background-color: white;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us-image {
+    background-image: url(../images/about-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.font-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
