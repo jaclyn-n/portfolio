@@ -59,7 +59,8 @@ nav {
 .about-us {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 0;
+    /* justify-content: space-between; */
 }
 
 .about-us-image {
@@ -67,6 +68,64 @@ nav {
     background-position: center;
     background-size: cover;
 }
+
+.skill {
+    margin-bottom: 50px;
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    border: 1px solid rgb(237, 237, 240);
+    /* padding: 2px; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10px;
+  }
+  
+  /* .progress-bar {
+    width: 85%;
+    background-color: rgb(62, 62, 119);
+    height: 5px;
+    border: 1px solid rgb(96, 96, 99);
+    border-radius: 30px;
+  } */
+  
+  .progress1 {
+    width: 80%;
+    background-color: #587E8A;
+    height: 5px;
+    border: 1px solid rgb(96, 96, 99);
+    border-radius: 30px;
+  }
+  .progress2 {
+    width: 60%;
+    background-color:#587E8A;
+    height: 5px;
+    border: 1px solid rgb(96, 96, 99);
+    border-radius: 30px;
+  }
+  .progress3 {
+    width: 50%;
+    background-color:#587E8A;
+    height: 5px;
+    border: 1px solid rgb(96, 96, 99);
+    border-radius: 30px;
+  }
+  
+
+  .name-figure {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+
+
+
+
 
 .font-span {
     display: flex;
@@ -83,9 +142,9 @@ nav {
     transition: transform 0.3s ease;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-}
+/* .service-card:hover {
+    transform:perspective(10px);
+} */
 
 .portfolio-item {
     position: relative;
@@ -144,9 +203,13 @@ nav {
     transition: transform 0.3s ease;
 }
 
-.blog-card:hover {
-    transform: translateY(-5px);
-}
+/* .blog-card:hover {
+    transform:perspective(180);
+} */
+
+/* .portfolioSection{
+    background-color:#648791;
+} */
 
 .contact-form input,
 .contact-form textarea {
@@ -163,7 +226,7 @@ nav {
 .social-links a {
     transition: color 0.3s ease;
 }
-
+/* 
 .pricing-section {
     background-color: #f8f9fa;
 }
@@ -240,4 +303,46 @@ nav {
 .plan-button:hover {
     background-color: #456670;
     transform: translateY(-2px);
+} */
+
+
+.footer{
+    background-color: #1c4957;
 }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding-right: 10px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float:center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 20px 8px;
+    /* border:  solid #ccc; */
+    border-top: none;
+  }
